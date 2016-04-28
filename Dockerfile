@@ -1,6 +1,7 @@
 FROM ubuntu
 
 ENV LINUX_PATH /usr/share/imagemagick/data
+ENV WIN_PATH 
 
 RUN apt-get update && apt-get install -y \
 		imagemagick \
