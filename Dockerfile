@@ -1,5 +1,7 @@
 FROM ubuntu
 
+ENV LINUX_PATH /usr/share/imagemagick/data
+
 RUN apt-get update && apt-get install -y \
 		imagemagick \
 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
