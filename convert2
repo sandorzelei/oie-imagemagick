@@ -1,0 +1,11 @@
+win_path="ccc"
+linux_path="vvv"
+
+for i in "$@"
+do
+    arg=`echo "$text" | sed 's/'"$win_path"'/'"$linux_path"'/g' <<< "$i"`
+    args="$args $arg"
+done
+
+
+convert $args
