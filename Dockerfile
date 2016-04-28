@@ -9,4 +9,4 @@ RUN chmod +x /usr/local/bin/convert2
 RUN ln -s /usr/local/bin/convert2 /usr/bin/convert2 
 
 	
-VOLUME /usr/share/imagemagick/data
+VOLUME ${LINUX_PATH}
